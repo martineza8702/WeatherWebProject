@@ -1,0 +1,24 @@
+body {
+    font-family: Ariela, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.weather-container{
+    text-align: center;
+
+}
+
+#search {
+    padding: 8px;
+    margin: 10px;
+
+}
+
+#weather-info {
+    margin-top: 20px;
+}
