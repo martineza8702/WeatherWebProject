@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset=""UTF-8>
-        <title>Weather App</title>
-        <link rel="stylessheet" href="styles.css">
-    </head>
-    <body>
-        <div class="weather-container">
-            <h1>Weather App</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <div class="search-container">
             <input type="text" id="search" placeholder="Enter a city">
-            <button onclick="searchWeather() ">Search</button>
-            </div>div id="weather-info"></div>
+            <button id="search-button">Search</button>
+            <script src="script.js"></script>
         </div>
-        <script src=""script.js></script>
-    </body>
+        <div class="weather-container">
+            <h2>Weather in <span id="city-name">City Name</span></h2>
+            <p>Temperature: <span id="temperature">--°F</span></p>
+            <p>Wind Speed: <span id="wind-speed">--m/s</span></p>
+            <p>Humidity: <span id="humidity">--%</span></p>
+            <p>UV Index: <span id="uv-index">--</span></p>
+            <p>Feels Like: <span id="feels-like">--°F</span></p>
+            <p>Clothing Suggestion: <span id="clothing-suggestion">--</span></p>
+        </div>
+        <script>
+            //Define the conversion function
+            function convertCelsiusToFahrenheit(celsius){
+                return (celsius * 9/5) + 32;
+            }
+        </script>
+    </main>
+    
+</body>
 </html>
+
+<!-- make it to where the user can switch between different metric systems -->
+<!-- show this weeks forecast-->

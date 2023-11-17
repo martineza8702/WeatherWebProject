@@ -1,24 +1,71 @@
 body {
-    font-family: Ariela, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-.weather-container{
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
     text-align: center;
+}
 
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Search Container */
+.search-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #search {
-    padding: 8px;
-    margin: 10px;
-
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-#weather-info {
+#search-button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Weather Container */
+.weather-container {
+    background-color: #fff;
+    padding: 20px;
     margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#city-name {
+    font-weight: bold;
+}
+
+/* Forecast Container (Sample styling; customize as needed) */
+.forecast-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design (Sample styling; customize as needed) */
+@media screen and (max-width: 600px) {
+    #search {
+        width: 100%;
+    }
 }
